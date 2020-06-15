@@ -10,16 +10,17 @@ body {
 
 .animation-wrapper {
   width: 50%;
-  padding-bottom: 50%;
+  padding-bottom: 0;
   z-index: -2; }
 
 .sphere-animation {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 580px;
-  height: 580px;
-  margin: -290px 0 0 -290px; }
+  width: 550px;
+  height: 550px;
+  margin: -290px 0 0 -290px;
+  margin-bottom: 0; }
 
 .sphere path {
   fill: url(#sphereGradient);
@@ -34,7 +35,7 @@ body {
 
 .headings {
   position: absolute;
-  top: 3vh; }
+  top: 30vh; }
   .headings h2,
   .headings h3 {
     font-size: 64px;
@@ -50,3 +51,34 @@ body {
     margin-top: 0;
     font-size: 32px;
     font-weight: 400; }
+
+.gallery {
+  position: absolute;
+  top: 100vh; }
+  .gallery h2 {
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 400;
+    font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -1.6px;
+    word-spacing: 0; }
+
+.slide-grid {
+  border-style: solid;
+  display: grid;
+  grid-template-areas: "left middle right";
+  grid-template-columns: 30vw 10vw 30vw;
+  width: 70vw;
+  height: 70vh;
+  gap: 0;
+  position: absolute;
+  top: 110vh; }
+  .slide-grid * {
+    border-style: solid; }
+  .slide-grid .left-grid {
+    grid-area: left; }
+  .slide-grid .middle-grid {
+    grid-area: middle; }
+  .slide-grid .right-grid {
+    grid-area: right; }
