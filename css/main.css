@@ -67,10 +67,9 @@ body {
 .slide-grid {
   border-style: solid;
   display: grid;
-  grid-template-areas: "left middle right";
-  grid-template-columns: 30vw 10vw 30vw;
+  grid-template-areas: "left plus middle equal right";
   width: 90vw;
-  height: 70vh;
+  height: 50vh;
   gap: 0;
   position: absolute;
   top: 110vh; }
@@ -108,3 +107,14 @@ body {
         background-color: #fff15c; }
       .footer .social-test a #envelope {
         background-color: #ff5c5c; }
+
+.footer-2 {
+  position: absolute;
+  top: 200vh;
+  width: 100%;
+  text-align: center;
+  background-color: #181717; }
+  .footer-2 p {
+    color: white;
+    font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px; }
