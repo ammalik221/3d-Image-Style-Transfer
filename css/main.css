@@ -84,17 +84,22 @@ body {
     grid-area: right; }
 
 .footer {
-  border-style: solid;
   position: absolute;
   top: 190vh;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2rem; }
   .footer .social-test {
-    text-align: center;
-    border-style: solid; }
+    text-align: center; }
     .footer .social-test a {
-      margin: 1rem; }
+      margin: 0.7rem; }
       .footer .social-test a i {
-        padding: 1rem;
-        border-style: solid;
+        padding: 0.8rem;
+        background-color: black;
+        color: white;
         border-radius: 50%; }
+        .footer .social-test a i:hover {
+          background-color: white;
+          color: #f44336;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out; }

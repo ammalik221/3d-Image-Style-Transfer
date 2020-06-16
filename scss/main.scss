@@ -5,6 +5,10 @@ $blueColor: rgba(33, 150, 243, 1);
   //border-style: solid;
 }
 
+@mixin easeOut {
+  transition: all 0.5s ease-in-out;
+}
+
 body {
   margin: 0;
   background-color: #252423;
@@ -115,24 +119,36 @@ body {
 }
 
 .footer {
-  border-style: solid;
+  //border-style: solid;
   position: absolute;
   top: 190vh;
   width: 100%;
   text-align: center;
+  padding-bottom: 2rem;
   //width: 100%;
   //height: 10vh;
   .social-test {
     text-align: center;
-    border-style: solid;
+    //border-style: solid;
 
     a {
-      margin: 1rem;
+      margin: 0.7rem;
+      //background-color: black;
+      //color: white;
 
       i {
-        padding: 1rem;
-        border-style: solid;
+        padding: 0.8rem;
+        background-color: black;
+        color: white;
+        //border-style: solid;
         border-radius: 50%;
+
+        &:hover {
+          background-color: white;
+          color: rgba(244, 67, 54, 1);
+          cursor: pointer;
+          @include easeOut();
+        }
       }
     }
   }
