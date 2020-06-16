@@ -69,7 +69,7 @@ body {
   display: grid;
   grid-template-areas: "left middle right";
   grid-template-columns: 30vw 10vw 30vw;
-  width: 70vw;
+  width: 90vw;
   height: 70vh;
   gap: 0;
   position: absolute;
@@ -82,3 +82,19 @@ body {
     grid-area: middle; }
   .slide-grid .right-grid {
     grid-area: right; }
+
+.footer {
+  border-style: solid;
+  position: absolute;
+  top: 190vh;
+  width: 100%;
+  text-align: center; }
+  .footer .social-test {
+    text-align: center;
+    border-style: solid; }
+    .footer .social-test a {
+      margin: 1rem; }
+      .footer .social-test a i {
+        padding: 1rem;
+        border-style: solid;
+        border-radius: 50%; }
