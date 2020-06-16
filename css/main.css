@@ -90,7 +90,7 @@ body {
   height: 50vh;
   gap: 0;
   position: absolute;
-  top: 110vh; }
+  top: 180vh; }
   .slide-2-grid * {
     border-style: solid; }
   .slide-2-grid .left-grid {
@@ -102,7 +102,7 @@ body {
 
 .footer {
   position: absolute;
-  top: 190vh;
+  top: 240vh;
   width: 100%;
   text-align: center;
   padding-bottom: 2rem; }
@@ -128,7 +128,7 @@ body {
 
 .footer-2 {
   position: absolute;
-  top: 200vh;
+  top: 250vh;
   width: 100%;
   text-align: center;
   background-color: #181717; }
