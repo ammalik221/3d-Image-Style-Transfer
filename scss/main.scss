@@ -118,6 +118,31 @@ body {
   }
 }
 
+.slide-2-grid {
+  border-style: solid;
+  * {
+    border-style: solid;
+  }
+  display: grid;
+  grid-template-areas: "left plus middle equal right";
+  //grid-template-columns: ;
+  width: 90vw;
+  height: 50vh;
+  gap: 0;
+  position: absolute;
+  top: 110vh;
+
+  .left-grid {
+    grid-area: left;
+  }
+  .middle-grid {
+    grid-area: middle;
+  }
+  .right-grid {
+    grid-area: right;
+  }
+}
+
 .footer {
   //border-style: solid;
   position: absolute;
@@ -175,6 +200,7 @@ body {
   //border-style: solid;
   background-color: darken($color: #252423, $amount: 5);
   p {
+    font-weight: 500;
     color: white;
     font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;

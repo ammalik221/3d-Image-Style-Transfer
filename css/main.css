@@ -82,6 +82,24 @@ body {
   .slide-grid .right-grid {
     grid-area: right; }
 
+.slide-2-grid {
+  border-style: solid;
+  display: grid;
+  grid-template-areas: "left plus middle equal right";
+  width: 90vw;
+  height: 50vh;
+  gap: 0;
+  position: absolute;
+  top: 110vh; }
+  .slide-2-grid * {
+    border-style: solid; }
+  .slide-2-grid .left-grid {
+    grid-area: left; }
+  .slide-2-grid .middle-grid {
+    grid-area: middle; }
+  .slide-2-grid .right-grid {
+    grid-area: right; }
+
 .footer {
   position: absolute;
   top: 190vh;
@@ -115,6 +133,7 @@ body {
   text-align: center;
   background-color: #181717; }
   .footer-2 p {
+    font-weight: 500;
     color: white;
     font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px; }
