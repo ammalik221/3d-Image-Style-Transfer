@@ -132,23 +132,36 @@ body {
     //border-style: solid;
 
     a {
-      margin: 0.7rem;
+      margin: 0.5rem;
       //background-color: black;
       //color: white;
 
       i {
         padding: 0.8rem;
-        background-color: black;
-        color: white;
+        //background-color: black;
+        //background-color: #5cd1ff;
+        color: black;
         //border-style: solid;
         border-radius: 50%;
 
         &:hover {
-          background-color: white;
-          color: rgba(244, 67, 54, 1);
+          //background-color: white;
+          //color: rgba(244, 67, 54, 1);
           cursor: pointer;
           @include easeOut();
         }
+      }
+      #linkedin {
+        background-color: #5cd1ff;
+      }
+      #github {
+        background-color: #64f592;
+      }
+      #medium {
+        background-color: #fff15c;
+      }
+      #envelope {
+        background-color: #ff5c5c;
       }
     }
   }

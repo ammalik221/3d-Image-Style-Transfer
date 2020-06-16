@@ -92,14 +92,19 @@ body {
   .footer .social-test {
     text-align: center; }
     .footer .social-test a {
-      margin: 0.7rem; }
+      margin: 0.5rem; }
       .footer .social-test a i {
         padding: 0.8rem;
-        background-color: black;
-        color: white;
+        color: black;
         border-radius: 50%; }
         .footer .social-test a i:hover {
-          background-color: white;
-          color: #f44336;
           cursor: pointer;
           transition: all 0.5s ease-in-out; }
+      .footer .social-test a #linkedin {
+        background-color: #5cd1ff; }
+      .footer .social-test a #github {
+        background-color: #64f592; }
+      .footer .social-test a #medium {
+        background-color: #fff15c; }
+      .footer .social-test a #envelope {
+        background-color: #ff5c5c; }
