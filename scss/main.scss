@@ -177,6 +177,57 @@ body {
   .right-grid {
     grid-area: right;
     border-style: solid;
+    .right-gallery {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-areas:
+        "topleft topright"
+        "bottomleft topright"
+        "bottomleft bottomright";
+      grid-template-columns: 20vw 20vw;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 7px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        box-shadow: 2px 2px 4px black;
+
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
+
+      .right-gallery-1,
+      .right-gallery-2,
+      .right-gallery-3,
+      .right-gallery-4 {
+        //border-style: solid;
+      }
+
+      .right-gallery-1 {
+        grid-area: topleft;
+        margin: 0;
+        padding: 0;
+        img {
+          //border-style: solid;
+          margin: 0;
+        }
+      }
+      .right-gallery-2 {
+        grid-area: topright;
+      }
+      .right-gallery-3 {
+        grid-area: bottomleft;
+      }
+      .right-gallery-4 {
+        grid-area: bottomright;
+        //width: 40vw;
+      }
+    }
   }
 }
 
