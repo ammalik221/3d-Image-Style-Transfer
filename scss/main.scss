@@ -171,7 +171,13 @@ body {
     display: flex;
     justify-content: center;
     i {
+      padding: 15px;
+      border-style: solid;
+      border-radius: 50%;
+      border-width: 1px;
       margin: auto;
+      color: white;
+      box-shadow: 2px 2px 4px black;
     }
   }
   .right-grid {
@@ -317,5 +323,7 @@ body {
     color: white;
     font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }

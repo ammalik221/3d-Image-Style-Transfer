@@ -112,7 +112,13 @@ body {
     display: flex;
     justify-content: center; }
     .slide-grid .middle-grid i {
-      margin: auto; }
+      padding: 15px;
+      border-style: solid;
+      border-radius: 50%;
+      border-width: 1px;
+      margin: auto;
+      color: white;
+      box-shadow: 2px 2px 4px black; }
   .slide-grid .right-grid {
     grid-area: right; }
     .slide-grid .right-grid .right-gallery {
@@ -194,4 +200,6 @@ body {
     font-weight: 500;
     color: white;
     font-family: Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
