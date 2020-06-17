@@ -114,8 +114,7 @@ body {
     .slide-grid .middle-grid i {
       margin: auto; }
   .slide-grid .right-grid {
-    grid-area: right;
-    border-style: solid; }
+    grid-area: right; }
     .slide-grid .right-grid .right-gallery {
       width: 100%;
       height: 100%;
