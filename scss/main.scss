@@ -3,6 +3,8 @@ $blueColor: rgba(33, 150, 243, 1);
 
 * {
   //border-style: solid;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin easeOut {
@@ -94,34 +96,94 @@ body {
 }
 
 .slide-grid {
-  border-style: solid;
+  //border-style: solid;
   * {
-    border-style: solid;
+    //border-style: solid;
   }
   display: grid;
   grid-template-areas: "left middle right";
-  //grid-template-columns: ;
+  grid-template-columns: 40vw 10vw 40vw;
   width: 90vw;
-  height: 50vh;
+  height: 70vh;
   gap: 0;
   position: absolute;
   top: 110vh;
 
   .left-grid {
     grid-area: left;
+    //border-style: solid;
+
+    .left-gallery {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-areas:
+        "topleft topright"
+        "bottomleft topright"
+        "bottomleft bottomright";
+      grid-template-columns: 20vw 20vw;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 7px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        box-shadow: 2px 2px 4px black;
+
+        &:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+      }
+
+      .left-gallery-1,
+      .left-gallery-2,
+      .left-gallery-3,
+      .left-gallery-4 {
+        //border-style: solid;
+      }
+
+      .left-gallery-1 {
+        grid-area: topleft;
+        margin: 0;
+        padding: 0;
+        img {
+          //border-style: solid;
+          margin: 0;
+        }
+      }
+      .left-gallery-2 {
+        grid-area: topright;
+      }
+      .left-gallery-3 {
+        grid-area: bottomleft;
+      }
+      .left-gallery-4 {
+        grid-area: bottomright;
+        //width: 40vw;
+      }
+    }
   }
   .middle-grid {
     grid-area: middle;
+    //border-style: solid;
+    display: flex;
+    justify-content: center;
+    i {
+      margin: auto;
+    }
   }
   .right-grid {
     grid-area: right;
+    border-style: solid;
   }
 }
 
 .slide-2-grid {
-  border-style: solid;
+  //border-style: solid;
   * {
-    border-style: solid;
+    //border-style: solid;
   }
   display: grid;
   //grid-template-areas: "left plus middle equal right";
